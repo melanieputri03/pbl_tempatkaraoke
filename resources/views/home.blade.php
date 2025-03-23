@@ -1,6 +1,9 @@
-<div>
-    <!-- When there is no desire, all things are at peace. - Laozi -->
+@extends('layouts.app')
 
-    Selamat datang di mikkeu pangpang {{$nama}}<br>
-    Anda adalah seorang {{$pekerjaan}}
-</div>
+@section('content')
+    <div class="container">
+        <h2>Selamat datang di Mikkeu Pangpang</h2>
+        <p>Halo, <strong>{{ $nama }}</strong></p>
+        <p>Anda adalah seorang <strong>{{ $pekerjaan }}</strong></p>
+    </div>
+@endsection
