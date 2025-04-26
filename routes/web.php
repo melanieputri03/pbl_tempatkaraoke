@@ -7,6 +7,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ItemController;
+use App\Http\Controllers\LoginController;
 
 
 //Route::get('/listbarang/{id}/{nama}', function ($id, $nama) {
@@ -37,4 +38,6 @@ Route::get('/items', [ItemController::class, 'index'])->name('items.index');
 Route::get('/about', [AboutController::class, 'index']);
 Route::get('/home', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+
 
