@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
         <link rel="stylesheet" href="{{ asset('styles/style_windy.css') }}">
+        <link rel="stylesheet" href="{{ asset('styles/style_melani.css') }}">
 
         <!-- Styles / Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
@@ -25,8 +26,9 @@
         <h1>Ini judul yang harusnya berwarna merah</h1>
 
 <!-- Gambar -->
-<img src="{{ asset('images/foto1.jpg') }}" alt="Foto 1" width="300">
-<img src="{{ asset('images/foto2.png') }}" alt="Foto 2" width="300">
+<img src="{{ asset('images/fotowindy.jpg') }}" alt="Foto 1" width="300">
+<img src="{{ asset('images/fotomelani.jpg') }}" alt="Foto 2" width="300">
+
             @if (Route::has('login'))
                 <nav class="flex items-center justify-end gap-4">
                     @auth
